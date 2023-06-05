@@ -1,4 +1,4 @@
-function solution(s) {
+function jadenCase문자열만들기(s: string) {
   const strArr = s.toLowerCase().split(" ");
   const upperStrArr = strArr.map(
     (str) => str.charAt(0).toUpperCase() + str.substring(1)
@@ -7,6 +7,6 @@ function solution(s) {
   return upperStrArr.join(" ");
 }
 
-solution("3people unFollowed me");
+jadenCase문자열만들기("3people unFollowed me");
 
-//? "3people Unfollowed Me"
+//? 실행 결과) "3people Unfollowed Me"
